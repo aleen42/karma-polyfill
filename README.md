@@ -17,10 +17,35 @@ Load patches for Jasmine, or polyfills like `core-js/stable` and `@babel/polyfil
     module.exports = config => {
         config.set({
             frameworks : [
+                'jasmine',
                 'polyfill',
                 // ...
             ],
             plugins    : [
+                'karma-jasmine',
+                '@aleen42/karma-polyfill',
+                // ...
+            ],
+            // ...
+        });
+    };
+    ```
+   
+3. If you want to test under IE7 / IE8, you may need the shimmed Jasmine framework:
+
+    ```diff
+    // karma.config.js 
+    module.exports = config => {
+        config.set({
+            frameworks : [
+    -           'jasmine',
+    +           'jasmine-polyfill',
+                'polyfill',
+                // ...
+            ],
+            plugins    : [
+    -           'karma-jasmine',
+    +           '@aleen42/karma-polyfill/jasmine',
                 '@aleen42/karma-polyfill',
                 // ...
             ],

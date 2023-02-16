@@ -1,3 +1,4 @@
 /*
 !/dist/**
+!jasmine.js
 !index.js
