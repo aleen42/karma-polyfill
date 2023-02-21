@@ -57,6 +57,7 @@ Load patches for Jasmine, or polyfills like `core-js/stable` and `@babel/polyfil
 ### Release History
 
 * ==================== **1.0.0 Initial release** ====================
+    * 1.0.1 shims for Karma and Jasmine under IE7 / IE8
 
 ### :fuelpump: How to contribute
 

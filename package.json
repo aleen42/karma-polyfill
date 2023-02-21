@@ -1,6 +1,6 @@
 {
   "name": "@aleen42/karma-polyfill",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Load polyfills like `core-js/stable`, and `@babel/polyfill` before running Karma tests",
   "main": "index.js",
   "scripts": {
